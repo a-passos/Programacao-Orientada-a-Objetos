@@ -1,0 +1,15 @@
+Para compilacao na linha de comando com o g++:
+
+1) Crie dentro da pasta autal do projeto as pastas (sao criadas se usas o codeblocks):
+    obj/Debug
+    bin/Debug
+    
+2) Execute as linhas a seguir uma por vez (ou crie um script):
+
+g++ -Wall -fexceptions -g  -c Conta.cpp -o obj/Debug/Conta.o
+g++ -Wall -fexceptions -g  -c ContaCorrente.cpp -o obj/Debug/ContaCorrente.o
+g++ -Wall -fexceptions -g  -c ContaPoupanca.cpp -o obj/Debug/ContaPoupanca.o
+g++ -Wall -fexceptions -g  -c main.cpp -o obj/Debug/main.o
+g++ -Wall -fexceptions -g  -c VetorContas.cpp -o obj/Debug/VetorContas.o
+g++  -o bin/Debug/ExercicioContas obj/Debug/Conta.o obj/Debug/ContaCorrente.o obj/Debug/ContaPoupanca.o obj/Debug/main.o obj/Debug/VetorContas.o   
+
